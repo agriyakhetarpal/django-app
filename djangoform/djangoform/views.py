@@ -16,4 +16,3 @@ def contact(request):
  # view to display the success page
 def success(request):
     return render(request, 'success.html')
-

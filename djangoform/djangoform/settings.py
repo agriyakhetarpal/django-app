@@ -23,14 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3z^6nm(_5h_+siq#+b15_l+h_tr&srgw(swi8&8*(i&ipou^s$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# allow hosts
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # add djangoform app
+    'djangoform',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
