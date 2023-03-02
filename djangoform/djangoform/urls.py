@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from djangoform.views import contact, success
 
+# add url patterns for the contact and the success pages
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('contact/', contact, name='contact'),
+    path('success/', success, name='success'),
 ]

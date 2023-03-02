@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from myapp.forms import ContactForm
+from djangoform.forms import ContactForm
 
 # display and process the form after validating the data
 def contact(request):
